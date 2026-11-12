@@ -1,0 +1,4 @@
+alertas.env
+*.pem
+.my.cnf
+*.csv
