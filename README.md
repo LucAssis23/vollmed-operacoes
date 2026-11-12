@@ -43,11 +43,12 @@ bash cobertura-teste.sh                # checa a cobertura
 ```
 
 Rode os scripts **sem `sudo`**: arquivos criados com `sudo` ficam com dono root e causam `Permissão negada` depois.
+**Atenção:** o restore **substitui** a tabela atual pelo conteúdo do backup escolhido. Restaurar um backup antigo apaga os dados mais novos dessa tabela. Teste primeiro com o backup mais recente.
 
 ## Observações
 
 - Os caminhos nos scripts de backup (`/home/lucas/...`) são do meu ambiente. Ajuste para o seu.
-- - Os scripts passam no ShellCheck, exceto avisos informativos e de estilo: `SC1091` e `SC2153` (o `source` do arquivo de segredos e as variáveis vindas dele) e `SC2181` (uso do `$?`, mantido de propósito por clareza).
+- Os scripts passam no ShellCheck, exceto avisos informativos e de estilo: `SC1091` e `SC2153` (o `source` do arquivo de segredos e as variáveis vindas dele) e `SC2181` (uso do `$?`, mantido de propósito por clareza).
 - Credenciais que apareceram em capturas de tela durante o desenvolvimento foram revogadas e recriadas.
 
 ## Próximos passos
